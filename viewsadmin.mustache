@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Login Login</title>
-  </head>
-  <body>
-    <h1>Login page</h1>
 
-    <h2>Greetings and Salutations! {{loggedUsr.nmae}}</h2>
-    <h3>Our users</h3>
-    {{#users}}
-          <p>Name: {{name}}</p>
-          <username: {{username}}</p>
-          <p>id: {{id}}</p>
-    {{/users}}
+<head>
+  <meta charset="utf-8">
+  <title>Login Login</title>
+</head>
+
+<body>
+  <h1>Login page</h1>
+
+  <h2>Greetings and Salutations! {{loggedUsr.name}}</h2>
+  <h3>Our users</h3>
+  {{#users}}
+    <p>Name: {{name}}</p>
+    <username: {{username}} </p>
+      <p>id: {{id}}</p>
+  {{/users}}
+  <div class="container">
+    <section>
+      <form name="name" name="createlogin">
+        <input type="text" name="" value="">
+        <button type="submit" name="submit">Submit</button>
+      </form>
+      <p>Counting with a local variable.</p>
+
+      <button type="button" onclick="myFunction()">Count!</button>
+
+      <p id="demo">0</p>
+
+      <script>
+        var add = (function() {
+          var counter = 0;
+          return function() {
+            return counter += 1;
+          }
+        })();
+
+        function myFunction() {
+          document.getElementById("demo").innerHTML = add();
+        }
+
+
+      </section> 
   </body>
-</html>
+  </html>

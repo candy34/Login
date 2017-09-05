@@ -1,11 +1,12 @@
 {
   "dependencies": {
     "body-parser": "^1.17.2",
+    "busboy": "^0.2.14",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
     "mustache-express": "^1.2.5"
   },
   "scripts": {
-    "start" : "node server.js"
+    "start": "node server.js"
   }
 }
