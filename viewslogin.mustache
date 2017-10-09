@@ -7,12 +7,13 @@
 </head>
 
 <body>
-  <form action="/login" method="POST">
-    <p>Enter username and password</p>
-    <input type="text" name="username" value="">
-    <input type="password" name="password" value="">
-    <input type="submit" name="submit" value="Login">
-  </form>
+  <h1>Public Web</h1>
+  {{#isAuthenticated}}
+  <a href="/logout">logout</a>
+  {{/isAuthenticated}}
+  {{^isAuthenticated}}
+  <a href="/login">login</a>
+  {{/isAuthenticated}}
 </body>
 
 </html>

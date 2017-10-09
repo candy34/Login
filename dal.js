@@ -1,4 +1,4 @@
-const users = [{
+let userInfo = [ {
     id: 1,
     name: 'Harry Potter',
     username: 'harpot',
@@ -12,28 +12,25 @@ const users = [{
   }
 ]
 
-function getUser(userId) {
-  const foundUser = users.find(usr => Number(userId) === usr.id)
+function getUser(username) {
+  const foundUser = userInfo.find(usr => usrname === usr.username)
   return foundUser
 
 }
 
-function getUserByUsername(usrname) {
-  const foundUser = users.find(usr => usrname === usr.username)
-  return foundUser
-}
 
-function getUserByUsername(usrname) {
-  const foundUser = users.find(usr => usrname === usr.username)
-  return foundUser
+function getUserPass(usrpass) {
+  const foundPass = userInfo.find(usr => usrpass === usr.password)
+  return foundPass
 }
 
 function getUsers() {
-  return users
+  return userInfo
 }
+console.log(userInfo);
 
 module.exports = {
   getUser,
-  getUserByUsername,
+  getUserPass,
   getUsers
 }
